@@ -1,4 +1,4 @@
-
+import JavaScriptPractice from "./components/JavaScriptPractice/JavaScriptPractice";
 // using props to pass a value from a function to render in the app
 // props are initialised in App where th ecomponent is rendered
 // function Greetings(props) {
@@ -17,22 +17,44 @@
 //   )
 // }
 
-function Header(props) {
-  return(
-    <div>
-      <h1>{props.course}</h1>
-    </div>
-  )
-}
+// function Header(props) {
+//   return(
+//     <div>
+//       <h1>{props.course}</h1>
+//     </div>
+//   )
+// }
+
+// function Content(props) {
+//   return(
+//     {props}
+//   )
+// }
+
+// function Total(props) {
+//   return(
+//     <div>
+//       {props.sum}
+//     </div>
+//   )
+// }
 
 function App() {
-  const course = 'Half Stack application development';
-  const part1 = 'Fundamentals of React';
-  const exercise1 = 10;
-  const part2 = 'Using props to pass data';
-  const exercise2 = 7;
-  const part3 = 'State of a component';
-  const exercise3 = 14;
+  // const course = 'Half Stack application development';
+  // const parts = [
+  //   {
+  //     name: 'Fundamentals of React',
+  //     exercises: 10
+  //   },
+  //   {
+  //     name: 'Using props to pass data',
+  //     exercises: 7
+  //   },
+  //   {
+  //     name: 'State of a component',
+  //     exercises: 14
+  //   }
+  // ]
 
   return (
     <div className="App">
@@ -43,19 +65,11 @@ function App() {
       <Greetings name="Alex" />
       <Footer /> */}
 
-      <Header course={course}/>
-      <p>
-        {part1} {exercise1}
-      </p>
-      <p>
-        {part2} {exercise2}
-      </p>
-      <p>
-        {part3} {exercise3}
-      </p>
-      <p>
-        Number of exercises {exercise1 + exercise2 + exercise3}
-      </p>
+      {/* <Header course={this.course}/>
+      <Content parts={this.parts.name} />
+      <Total sum={this.parts.exercises[0] + this.parts.exercises[1] + this.parts.exercises[2]} /> */}
+
+      <JavaScriptPractice />
     </div>
   );
 }
