@@ -1,13 +1,15 @@
 import JavaScriptPractice from "./components/JavaScriptPractice/JavaScriptPractice";
 // using props to pass a value from a function to render in the app
 // props are initialised in App where th ecomponent is rendered
-// function Greetings(props) {
-//   return(
-//     <div>
-//       <p>Hello {props.name}</p>
-//     </div>
-//   )
-// }
+function Greetings(props) {
+  return(
+    <div>
+      <p>
+        Hello {props.name}, you are {props.age} years old.
+      </p>
+    </div>
+  )
+}
 
 // function Footer() {
 //   return(
@@ -39,6 +41,8 @@ import JavaScriptPractice from "./components/JavaScriptPractice/JavaScriptPracti
 //   )
 // }
 
+
+
 function App() {
   // const course = 'Half Stack application development';
   // const parts = [
@@ -56,6 +60,10 @@ function App() {
   //   }
   // ]
 
+
+  const name = 'Peter';
+  const age= 34;
+
   return (
     <div className="App">
       {/* <h1>Hello world, it is {now.toString()}</h1>
@@ -69,6 +77,8 @@ function App() {
       <Content parts={this.parts.name} />
       <Total sum={this.parts.exercises[0] + this.parts.exercises[1] + this.parts.exercises[2]} /> */}
 
+      <Greetings name='Maya' age={26 + age} />
+      <Greetings name={name} age={age} />
     </div>
   );
 }
