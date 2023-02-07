@@ -23,26 +23,26 @@ export default function JavaScriptPractice () {
   //   // console.log(x, y);
   // }
 
-  function ArraysInJs () {
-    const instruments = ['Guitar', 'Piano', 'Violine', 'Trumpet'];
+  // function ArraysInJs () {
+  //   const instruments = ['Guitar', 'Piano', 'Violine', 'Trumpet'];
 
-    instruments.push('Flute');
-    console.log(instruments.length);
-    console.log(instruments[2]);
+  //   instruments.push('Flute');
+  //   console.log(instruments.length);
+  //   console.log(instruments[2]);
 
-    return(
-      <div>
-        {instruments.forEach((instrument) => {
-          console.log(instrument);
-        })}
-      </div>
-    )
-  }
+  //   return(
+  //     <div>
+  //       {instruments.forEach((instrument) => {
+  //         console.log(instrument);
+  //       })}
+  //     </div>
+  //   )
+  // }
 
   return(
     <div>
-      <h1>This is JS Practice page...</h1>
-      <ArraysInJs />
+      <h1>This is React basics Practice page...</h1>
+
     </div>
   )
 }
