@@ -69,7 +69,6 @@ function App() {
       <Content parts={this.parts.name} />
       <Total sum={this.parts.exercises[0] + this.parts.exercises[1] + this.parts.exercises[2]} /> */}
 
-      <JavaScriptPractice />
     </div>
   );
 }

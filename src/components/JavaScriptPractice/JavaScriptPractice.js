@@ -41,7 +41,7 @@ export default function JavaScriptPractice () {
 
   return(
     <div>
-      <h1>This is React basics Practice page...</h1>
+      <h1>This is JS Practice page...</h1>
 
     </div>
   )
