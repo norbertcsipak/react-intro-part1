@@ -71,7 +71,7 @@ function App() {
 
 
   const name = 'Peter';
-  const age= 34;
+  const age= 15;
 
   return (
     <div className="App">
