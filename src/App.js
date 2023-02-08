@@ -1,4 +1,5 @@
 import JavaScriptPractice from "./components/JavaScriptPractice/JavaScriptPractice";
+import ReRenderingPage from "./components/ReRenderingPage/ReRenderPage";
 // using props to pass a value from a function to render in the app
 // props are initialised in App where th ecomponent is rendered
 function Greetings(props) {
@@ -10,12 +11,14 @@ function Greetings(props) {
 
   return(
     <div>
-      <p>
+      {/* <p>
         Hello {props.name}, you are {props.age} years old.
       </p>
       <p>
         So you were probably born in {bornYear()}
-      </p>
+      </p> */}
+
+      <ReRenderingPage />
     </div>
   )
 }
